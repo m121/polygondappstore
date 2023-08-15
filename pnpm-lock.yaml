@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  "@merokudao/storekit-sdk":
+    specifier: ^1.21.0
+    version: 1.21.0
   "@types/node":
     specifier: 20.4.10
     version: 20.4.10
@@ -2390,6 +2393,17 @@ packages:
       - supports-color
     dev: true
 
+  /@merokudao/storekit-sdk@1.21.0:
+    resolution:
+      {
+        integrity: sha512-YP3+gBJjM8dltoUVuaE/8K6lO7KhVTEms1uphI/d6QpBUbjjs2HTA1gpfd9suwrRt7Y23Mgzzlr2Dd6b2AJJdA==,
+      }
+    dependencies:
+      axios: 0.21.4
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /@next/env@13.4.13:
     resolution:
       {
@@ -3766,6 +3780,17 @@ packages:
         integrity: sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==,
       }
     engines: { node: ">=4" }
+    dev: false
+
+  /axios@0.21.4:
+    resolution:
+      {
+        integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==,
+      }
+    dependencies:
+      follow-redirects: 1.15.2
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /axobject-query@3.2.1:
@@ -6005,6 +6030,19 @@ packages:
       {
         integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==,
       }
+
+  /follow-redirects@1.15.2:
+    resolution:
+      {
+        integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==,
+      }
+    engines: { node: ">=4.0" }
+    peerDependencies:
+      debug: "*"
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
 
   /for-each@0.3.3:
     resolution:
